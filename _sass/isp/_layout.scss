@@ -1,0 +1,395 @@
+.page {
+  width: $content-width;
+  margin: auto;
+  background-color: white;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  box-shadow: 0 0 5px 0 #ddd;
+  padding-top: 5px; 
+}
+
+.topnavigation {
+  text-align: right;
+  padding-bottom: 8px;
+  border-bottom: 14px solid $brand-color;
+}
+
+.mainnavigation {
+  margin-top: 2px;
+  border-top: 1px solid black;
+  font-size: 118%;
+  font-weight: 700;
+}
+
+.mainmenu {
+  margin-left: 0;
+  margin-top: 7px;
+
+ 	li {
+		display: inline;
+		line-height:1;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		margin-bottom: 7px;
+		@extend .float-left;
+ 	
+		a {
+			color: black;
+		}
+ 	}
+
+	.menuseperator {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+}
+
+.headerimage-container {
+  position: relative;
+}
+.logo {
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 44px;
+}
+
+.breadcrumb {
+  margin-top: 7px;
+  margin-bottom: 10px;
+
+  a {
+  	color: #666666;
+
+	&:hover {
+		color: $brand-color;
+		text-decoration: none;
+	}
+  }
+}
+
+.content {
+  min-height: 400px;
+}
+.sidenavigation {
+  width: 182px;
+  border-top: 2px solid $brand-color;
+  @extend .float-left;
+  margin-right: 19px;
+
+	h1 {
+		font-size: 109%;
+		margin-top: 9px;
+		margin-bottom: 1px;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #E5E5E5;
+		font-weight: bold !important;
+	}
+	a:visited {
+		color: $brand-color;
+	}
+}
+
+.center-content {
+  @extend .float-left;
+  width: 529px;
+  margin-right: 19px;
+  h1 {
+  	font-size: 145%;
+	color: $brand-color;
+	font-weight: bold;
+  }
+}
+
+.contact {
+  @extend .float-left;
+  width: 182px;
+  border-top: 2px solid $brand-color;
+
+  h1 {
+  	color: $brand-color;
+	font-size: 109%;
+	line-height: 1.1;
+	border-bottom: 1px solid #E5E5E5;
+	font-weight: bold;
+	padding-top: 9px;
+  }
+  p {
+  	line-height: 1.0; 
+  }
+
+  .institutelogo {
+  	margin-top: 8px;
+  }
+
+}
+
+.to-top {
+ text-align: right; 
+ font-size: $base-font-size + 3px;
+ padding-bottom: 9px;
+}
+
+.colored {
+ color: $brand-color;
+}
+
+/**
+* Extend classes
+*/
+
+.float-left {
+  float: left;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.865;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+}
+
+.page-heading {
+  @include relative-font-size(1.25);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}

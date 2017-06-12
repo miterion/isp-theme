@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+	<div class="page">
+		{% include header.html %}
+		<div class="content">
+			{% include menu.html %}
+			<div class="center-content">
+        		{{ content }}
+		</div>
+			{% include contact.html %}
+	</div>
+	<p class="to-top"><a href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></p>
+	</div>
+    {% include footer.html %}
+
+  </body>
+
+</html>

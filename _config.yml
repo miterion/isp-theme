@@ -1,0 +1,9 @@
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+      menu: [{name: TU Darmstadt, url: www.tu-darmstadt.de}, {name: Test2, url: www.example.com}, {name: Test, url: www.example.com}]
+      breadcrumbs: [{name: TU Darmstadt, url: www.tu-darmstadt.de}, {name: Informatik, url: www.informatik.tu-darmstadt.de}]
+      sidenav: {mainname: Fachbereich Informatik, mainurl: 'https://www.informatik.tu-darmstadt.de'}

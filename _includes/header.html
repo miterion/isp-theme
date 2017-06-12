@@ -1,0 +1,36 @@
+<header class="header" >
+
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  
+    <div class="topnavigation">
+	English
+  </div>
+  <div class="mainnavigation">
+	  <ul class="mainmenu">
+	  {% for item in page.menu %}
+	  <li>
+		  <a href="{{item.url}}">{{item.name}}</a>
+	  </li>
+	  {% unless forloop.last %}
+	  <li class="menuseperator" >|</li>
+	  {% endunless %}
+	  {% endfor %}
+	  </ul>
+	  </div>
+  <div class="headerimage-container">
+	  <img class="headerimage" src="{{ site.url }}/assets/img/header.png">
+	  <div class="logo">
+		  <a href="https://www.tu-darmstadt.de">
+			  <img src="{{ site.url }}/assets/img/tudlogo.png" width="182" height="84">
+			  </a>
+		  </div>
+  </div>
+  <div class="breadcrumb">
+	  {% for crumb in page.breadcrumbs %}
+	  <a href="{{ crumb.url }}">{{ crumb.name }} » </a>
+	  {% endfor %}
+	  {{ page.title }}
+  </div>
+</header>
