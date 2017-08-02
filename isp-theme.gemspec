@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "isp-theme"
   spec.version       = "0.1.0"
-  spec.authors       = [""]
-  spec.email         = [""]
+  spec.authors       = ["Heiko Carrasco"]
+  spec.email         = ["hc82bydi@rbg.informatik.tu-darmstadt.de"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Small TU Darmstadt Theme for ISP Purposes"
+  spec.homepage      = "isp.informatik.tu-darmstadt.de"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
