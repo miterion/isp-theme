@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "isp-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Heiko Carrasco"]
   spec.email         = ["hc82bydi@rbg.informatik.tu-darmstadt.de"]
 
