@@ -1,2 +1,12 @@
-<footer >
+<footer>
+	  <ul class="menu">
+	  {% for item in page.footer %}
+	  <li>
+		  <a href="{{item.url}}">{{item.name}}</a>
+	  </li>
+	  {% unless forloop.last %}
+	  <li class="menuseperator" >|</li>
+	  {% endunless %}
+	  {% endfor %}
+	  </ul>
 </footer>

@@ -7,4 +7,5 @@ defaults:
       menu: [{name: TU Darmstadt, url: www.tu-darmstadt.de}, {name: Test2, url: www.example.com}, {name: Test, url: www.example.com}]
       breadcrumbs: [{name: TU Darmstadt, url: www.tu-darmstadt.de}, {name: Informatik, url: www.informatik.tu-darmstadt.de}]
       sidenav: {mainname: Fachbereich Informatik, mainurl: 'https://www.informatik.tu-darmstadt.de'}
+      footer: [{name: Impressum, url: 'https://www.informatik.tu-darmstadt.de/index.php?id=1894'}]
       english: "/en"
