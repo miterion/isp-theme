@@ -2,6 +2,8 @@
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
+For a example page see [here](https://github.com/Miterion/isp-site-template).
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
