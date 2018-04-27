@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "isp-theme"
-  spec.version       = "0.9.0"
+  spec.version       = "0.10.0"
   spec.authors       = ["Heiko Carrasco"]
-  spec.email         = ["hc82bydi@rbg.informatik.tu-darmstadt.de"]
+  spec.email         = ["heiko@rbg.informatik.tu-darmstadt.de"]
 
-  spec.summary       = "Small TU Darmstadt Theme for ISP Purposes"
-  spec.homepage      = "https://www.isp.informatik.tu-darmstadt.de"
+  spec.summary       = %q{Small TU Darmstadt Theme for ISP Purposes}
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
