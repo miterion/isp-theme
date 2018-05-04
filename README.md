@@ -1,8 +1,3 @@
-# Moved to github
-See [here](https://github.com/Miterion/isp-theme) for current development 
-
-
-
 # isp-theme
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
