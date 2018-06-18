@@ -9,3 +9,11 @@ defaults:
       sidenav: {mainname: Fachbereich Informatik, mainurl: 'https://www.informatik.tu-darmstadt.de'}
       footer: [{name: Impressum, url: 'https://www.informatik.tu-darmstadt.de/index.php?id=1894'}]
       language: {language: english, url: en}
+      contact:
+        person: "Prof. Dr. Stefan Katzenbeisser"
+        room: "Raum  4.3.25"
+        street: "Mornewegstrasse 32"
+        postal_code: 64289
+        city: "Darmstadt"
+        phone: "+49 6151 16-25500/-25501"
+        email: "dekanat(a-t)informatik.tu-darmstadt.de"

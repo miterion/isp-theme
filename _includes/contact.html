@@ -4,12 +4,12 @@
     	</a>
 	<h1> Kontakt</h1>
 	<p class="colored"><b>Dekan</b></p>
-	<p>Professor Dr. rer. nat. Max Mühlhäuser</p>
-	<p>S2|02 D103<br>
-	Hochschulstr. 10<br>
-	64289 Darmstadt</p>
+	<p>{{ page.contact.person }}</p>
+	<p>{{ page.contact.room }}<br>
+	{{ page.contact.street }}<br>
+	{{ page.contact.postal_code }} {{ page.contact.city }}</p>
 	<p>Technische Universität 
 	Darmstadt</p>
-	<i class="fa fa-phone" aria-hidden="true"></i>+49 6151 16-25500/-25501<br>
-	<i class="fa fa-envelope-o" aria-hidden="true"></i> <u>dekanat(a-t)informatik.tu-darmstadt.de</u>
+	<i class="fa fa-phone" aria-hidden="true"></i>{{ page.contact.phone }}<br>
+	<i class="fa fa-envelope-o" aria-hidden="true"></i> <u>{{ page.contact.email }}</u>
 </aside>
