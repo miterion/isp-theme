@@ -110,6 +110,12 @@
 	}
 }
 
+.content::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
 .contact {
 	@extend .float-left;
 
