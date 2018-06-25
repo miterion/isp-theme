@@ -1,5 +1,6 @@
 
 contact:
+  header: "Dekan"
   person: "Prof. Dr. Stefan Katzenbeisser"
   room: "Raum  4.3.25"
   street: "Mornewegstrasse 32"
@@ -7,6 +8,7 @@ contact:
   city: "Darmstadt"
   phone: "+49 6151 16-25500/-25501"
   email: "dekanat(a-t)informatik.tu-darmstadt.de"
+  institutelogo: {url: "https://informatik.tu-darmstadt.de", path: "/assets/img/fb-logo.png"}
 
 defaults:
   -

@@ -102,6 +102,29 @@
 	a:visited {
 		color: $brand-color;
 	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin-left: 0;
+		border-bottom: 1px solid #E5E5E5;
+
+		li a {
+			background-color: #E9EAF1;
+			font-weight: 700;
+			padding: 5px 8px;
+			border-bottom: 1px solid #fff;
+			min-width: 166px;
+			width: 100%;
+			display: inline-block;
+			box-sizing: border-box;
+
+			&:hover, &.active {
+				background-color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .center-content {
@@ -333,7 +356,7 @@ footer {
 			a {
 				color: #333;
 				&:hover {
-			color: $brand-color;	
+			color: $brand-color;
 				}
 			}
 		}

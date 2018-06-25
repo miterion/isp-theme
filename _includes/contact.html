@@ -1,15 +1,20 @@
 <aside class="contact">
-	<a href="http://www.informatik.tu-darmstadt.de">
-		<img class="institutelogo" src="{{ "/assets/img/fb-logo.png" | relative_url }}" >
-    	</a>
+	<a href="{{site.contact.institutelogo.url}}">
+		<img class="institutelogo" src="{{site.contact.institutelogo.path | absolute_url }}" >
+  </a>
 	<h1> Kontakt</h1>
-	<p class="colored"><b>Dekan</b></p>
+	<p class="colored"><b>{{site.contact.header}}</b></p>
 	<p>{{ site.contact.person }}</p>
 	<p>{{ site.contact.room }}<br>
 	{{ site.contact.street }}<br>
 	{{ site.contact.postal_code }} {{ site.contact.city }}</p>
-	<p>Technische Universität 
-	Darmstadt</p>
+	<p>Technische Universität	Darmstadt</p>
 	<i class="fa fa-phone" aria-hidden="true"></i>{{ site.contact.phone }}<br>
 	<i class="fa fa-envelope-o" aria-hidden="true"></i> <u>{{ site.contact.email }}</u>
+	{% for logo in site.contact.logos %}
+			<h1>{{logo.title}}</h1>
+			<a href="{{logo.url}}">
+				<img class="institutelogo" src="{{ logo.path | absolute_url }}" >
+		  </a>
+	{% endfor %}
 </aside>
