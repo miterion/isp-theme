@@ -6,8 +6,10 @@
   <body>
 	<div class="page">
 		{% include header.html %}
+		<nav class="sidenavigation">
+		{% include menu.html %}
+		</nav>
 		<div class="content">
-			{% include menu.html %}
 			<div class="center-content">
         		{{ content }}
 		</div>

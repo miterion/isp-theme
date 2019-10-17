@@ -98,9 +98,14 @@
 		border-bottom: 1px solid #E5E5E5;
 		font-weight: bold !important;
 	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
 
-	a:visited {
-		color: $brand-color;
+		&:visited {
+			color: $brand-color;
+		}
 	}
 
 	ul {
