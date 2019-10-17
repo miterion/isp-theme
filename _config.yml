@@ -8,7 +8,7 @@ contact:
   city: "Darmstadt"
   phone: "+49 6151 16-25500/-25501"
   email: "dekanat(a-t)informatik.tu-darmstadt.de"
-  institutelogo: {url: "https://informatik.tu-darmstadt.de", path: "/assets/img/fb-logo.png"}
+  institutelogo: {url: "https://informatik.tu-darmstadt.de", path: "/assets/img/fb-logo.svg"}
 
 defaults:
   -
