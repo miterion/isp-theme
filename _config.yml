@@ -1,14 +1,12 @@
-
-contact:
-  header: "Dekan"
-  person: "Prof. Stefan Roth, Ph.D."
-  room: "S2|02 D103"
-  street: "Hochschulstraße 10"
-  postal_code: 64289
-  city: "Darmstadt"
-  phone: "+49 6151 16-25500/-25501"
-  email: "dekanat(a-t)informatik.tu-darmstadt.de"
-  institutelogo: {url: "https://informatik.tu-darmstadt.de", path: "/assets/img/fb-logo.svg"}
+contact_header: "Dekan"
+contact_person: "Prof. Stefan Roth, Ph.D."
+contact_room: "S2|02 D103"
+contact_street: "Hochschulstraße 10"
+contact_postal_code: 64289
+contact_city: "Darmstadt"
+contact_phone: "+49 6151 16-25500/-25501"
+contact_email: "dekanat(a-t)informatik.tu-darmstadt.de"
+contact_institutelogo: {url: "https://informatik.tu-darmstadt.de", path: "/assets/img/fb-logo.svg"}
 
 defaults:
   -
